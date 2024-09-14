@@ -1,0 +1,43 @@
+.stats-box{
+    /* background: orange; */
+    align-items: center;
+    font-size: 16px;
+    margin: 12px;
+    border-radius: 6px;
+}
+img{
+    height: 150px;
+}
+.category{
+    background: #fff;
+    padding: 4px;
+    color: #081033;
+    text-align: center;
+    margin-bottom: 12px;
+    font-weight: 700;
+}
+.name{
+    font-size: 24px;
+}
+.value{
+    font-size: 22px;
+
+}
+.PurpleCap_bg{
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(233,242,91,1) 100%);
+}
+.OrangeCap_bg{
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(48,238,141,1) 100%);
+}
+.MostValuablePlayer_bg{
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(12,226,224,1) 100%);
+}
+.Fairplay_bg{
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(210,210,180,1) 100%);
+}
+.BestBowlingFigures_bg{
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(238,49,167,1) 100%);
+}
+.Highestscore_bg{
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(246,215,178,1) 100%);
+}

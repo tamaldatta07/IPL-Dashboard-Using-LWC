@@ -1,0 +1,20 @@
+<template>
+    <h2>IPL T20 All Time Leaders</h2>
+    <div class="slds-grid slds-wrap">
+        <template for:each={allLeaders} for:item="leader">
+            <div key={leader.KPIType} class="slds-col slds-size_6-of-12">
+                <div class="card">
+                    <h3>{leader.title}</h3>
+                    <div class="card-body">
+                        <img src={leader.player_image} alt="player" class="player-img" />
+                        <img src={leader.team_logo} class="team-logo-img" />
+                        <div class="name">{leader.PLAYER_NAME}</div>
+                        <div class="value">{leader.KPIValue} {leader.label}</div>
+                        <lightning-button variant="base" label="View Top 5" data-filename={leader.KPIType}
+                            data-title={leader.title} onclick={clickHandler}></lightning-button>
+                    </div>
+                </div>
+            </div>
+        </template>
+    </div>
+</template>

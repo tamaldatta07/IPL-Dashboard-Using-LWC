@@ -1,0 +1,15 @@
+:host{
+    background: #081033;
+    display: block;
+    color: #fff;
+    padding: 16px;
+    border-radius: 5px;
+}
+
+h2{
+    font-size: 20px;
+    text-align: center;
+    font-weight: 600;
+    padding: 12px;
+    text-transform: uppercase;
+}

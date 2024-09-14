@@ -1,0 +1,57 @@
+<template>
+
+    <h2>{heading}</h2>
+    <div class="slds-grid slds-wrap slds-gutters">
+        <template for:each={records} for:item="record">
+            <div class="slds-col slds-size_12-of-12" key={record.PlayerId}>
+                <div class="ipl-card">
+                    <div class="slds-grid">
+                        <div class="slds-col slds-size_2-of-12">
+                            <img src={record.player_image} onerror={errorHandler} />
+                        </div>
+                        <div class="slds-col slds-size_5-of-12">
+                            <div class="slds-grid">
+                                <span class="bold-label">POS</span>
+                                <span>{record.pos}</span>
+                            </div>
+                            <div class="slds-grid">
+                                <span class="bold-label">PLAYER</span>
+                                <span>{record.StrikerName}</span>
+                            </div>
+                            <div class="slds-grid">
+                                <span class="bold-label">MATCH</span>
+                                <span>{record.Matches}</span>
+                            </div>
+                            <div class="slds-grid" lwc:if={showRuns}>
+                                <span class="bold-label">RUNS</span>
+                                <span>{record.TotalRuns}</span>
+                            </div>
+                            <div class="slds-grid" lwc:if={showRuns}>
+                                <span class="bold-label">HS</span>
+                                <span>{record.HighestScore}</span>
+                            </div>
+                        </div>
+                        <div class="slds-col slds-size_5-of-12">
+                            <div class="slds-grid" lwc:if={showWickets}>
+                                <span class="bold-label">WICKETS</span>
+                                <span>{record.Wickets}</span>
+                            </div>
+                            <div class="slds-grid">
+                                <span class="bold-label">FOURS</span>
+                                <span>{record.Fours}</span>
+                            </div>
+                            <div class="slds-grid">
+                                <span class="bold-label">SIXES</span>
+                                <span>{record.Sixes}</span>
+                            </div>
+                            <div class="slds-grid">
+                                <span class="bold-label">SR</span>
+                                <span>{record.StrikeRate}</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </template>
+    </div>
+</template>

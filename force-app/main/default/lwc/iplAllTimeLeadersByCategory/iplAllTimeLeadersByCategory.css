@@ -1,0 +1,26 @@
+:host{
+    display: block;
+    background: #081033;
+    color: #fff;
+    padding: 16px;
+    border-radius: 5px;
+}
+h2{
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 12px;
+}
+.ipl-card{
+    background: #f5f4f4;
+    color: #000;
+    border-radius: 5px;
+    padding: 12px;
+    margin: 12px 0px;
+
+}
+.bold-label{
+    font-weight: 700;
+    min-width: 70px;
+}
