@@ -18,13 +18,16 @@
             </div>
             <div class="slds-col slds-size_6-of-12">
                 <img src={winner} alt="winner 2024" class="ipl-winner" />
-                <lightning-carousel>
+                <!-- <lightning-carousel>
                     <template for:each={carouselList} for:item="item">
                         <lightning-carousel-image key={item.year} src={item.url} alternative-text={item.altText}>
                         </lightning-carousel-image>
                     </template>
 
-                </lightning-carousel>
+                </lightning-carousel> -->
+                <c-ipl-custom-carousel carousel-list={carouselList}>
+
+                </c-ipl-custom-carousel>
             </div>
             <div class="slds-col slds-size_3-of-12">
                 <div class="slds-grid slds-wrap">
